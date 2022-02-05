@@ -1,0 +1,62 @@
+.card {
+  &:hover{
+    z-index: 1;
+    animation:rotate .8s 1 forwards;
+  }
+  text-align: center;
+  font-family: aspace, serif;
+  background-color: transparent !important;
+  margin: 0px 10px;
+  &__header{
+      background-color: #278e3f;
+      border-radius: 10px 10px 0px 0px !important;
+      color: white;
+  }
+  &__body{
+    background: #F0F3E0;
+    border-radius: 0px 0px 10px 10px !important;
+    &--episode{
+      margin: 0px 5px 10px;
+      font-size: 12px;
+    }
+    &--img{
+      img{
+        border: 1px solid #000000;      
+      }
+    }
+    &--content{
+      &.name{
+        text-align: center;
+        color: #03aecc;
+        text-shadow: 1px 0 0 #03454d, -1px 0 0 #03454d, 0 1px 0 #03454d,
+          0 -1px 0 #03454d, 1px 1px #03454d, -1px -1px 0 #03454d, 1px -1px 0 #03454d,
+          -1px 1px 0 #03454d;
+        font-family: schwifty, serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.5vw;
+
+      }
+      &.location{
+        color: black;
+        text-shadow: none;
+        filter: none;
+        font-weight: 600;
+        font-size: .7vw;
+        line-height : 13px;
+        margin-bottom: 5px;
+      }
+      &.data{
+        color: black;
+        text-shadow: none;
+        filter: none;
+        font-size: .6vw;
+      }
+    }
+  }
+}
+
+@keyframes rotate { 
+  from {transform: rotate(0deg) scale(1)}
+  to {transform: rotate(-5deg) scale(1.5)}
+}

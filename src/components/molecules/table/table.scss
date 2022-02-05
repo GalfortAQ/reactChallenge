@@ -1,0 +1,44 @@
+.table {
+    padding: 2%;
+    margin-bottom: 0px !important;
+    &__characters{
+        display: contents;
+        &--add{
+            color:white;
+            font-family: aspace, serif;
+            text-align: center;
+            border: 1.5px dashed #FFFFFF;
+            border-radius: 10px;
+            &-header{
+                height: 41px;
+                padding: auto;
+                border-bottom: 1.5px dashed #FFFFFF;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            &-body{
+                padding: 10%;
+                .body-content{
+                    text-align: center;
+                }
+            }
+            &:hover{
+                background-color: rgb(255, 255, 255,.15);
+            }
+        }
+    }
+    .modalAddCharacter{
+       
+    }
+    .modal{
+        &-content{
+            background-color: #FFFFFF;
+            border-radius: 20px;
+        }
+    }
+}
+.table>:not(caption)>*>*{
+    padding: 0px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,59 @@
+.pagination {
+    margin-bottom: 20px;
+    &__button{
+        text-align: center;
+        color: #FFFF;
+        background-size: cover;
+        height: 60px;
+        width: 70px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, .5);        
+        font-family: aspace, serif;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 14px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius: 10px;
+        &.--left{
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/vuechallenge-2779c.appspot.com/o/portal_left.png?alt=media&token=31d20fa0-47bf-4142-87e8-d5e93060d528');
+            &:hover{
+                cursor:pointer;
+                animation: goPortalLeft 0.5s 1 forwards;
+                .pagination__button--label{
+                    opacity: 0;
+                }
+            }
+        }
+        &.--right{
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/vuechallenge-2779c.appspot.com/o/portal.png?alt=media&token=7fbf4e69-edf0-4d2e-982b-3879836ad341');
+            &:hover{
+                cursor:pointer;
+                animation: goPortalRight .5s 1 forwards;
+                .pagination__button--label{
+                    opacity: 0;
+                }
+            }
+        }
+        &--label{
+            background-color: rgb(0, 0, 0, .4);
+            padding: 5px 40%;
+            border-radius: 50px;
+
+        }
+    }
+}
+@keyframes goPortalRight { 
+    0% { transform: rotate(0deg); opacity: 1;}
+    50% { transform: rotate(50deg); opacity: 1;}
+    55%{opacity: 0;  border-radius: 0px ;background-image: url('https://firebasestorage.googleapis.com/v0/b/vuechallenge-2779c.appspot.com/o/portal.png?alt=media&token=7fbf4e69-edf0-4d2e-982b-3879836ad341');}
+    56%{opacity: 0;background-image: url('https://cdna.artstation.com/p/assets/images/images/031/538/850/original/petro-kosariekov-portal-gun-rick-and-morty2-2.gif');}
+    100% { opacity: 1;height: 70px; border-radius: 50px ;background-image: url('https://cdna.artstation.com/p/assets/images/images/031/538/850/original/petro-kosariekov-portal-gun-rick-and-morty2-2.gif'); }
+  }
+@keyframes goPortalLeft {  
+     0% { transform: rotate(0deg); opacity: 1;}
+50% { transform: rotate(-50deg); opacity: 1;}
+55%{opacity: 0;  border-radius: 0px ;background-image: url('https://firebasestorage.googleapis.com/v0/b/vuechallenge-2779c.appspot.com/o/portal_left.png?alt=media&token=31d20fa0-47bf-4142-87e8-d5e93060d528');}
+56%{opacity: 0;background-image: url('https://cdna.artstation.com/p/assets/images/images/031/538/850/original/petro-kosariekov-portal-gun-rick-and-morty2-2.gif');}
+100% { opacity: 1;height: 70px; border-radius: 50px ;background-image: url('https://cdna.artstation.com/p/assets/images/images/031/538/850/original/petro-kosariekov-portal-gun-rick-and-morty2-2.gif'); }
+  }

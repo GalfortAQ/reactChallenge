@@ -1,0 +1,40 @@
+.locationCard{
+    color: white;
+    font-family: aspace, serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-image: url("https://image.freepik.com/vector-gratis/resumen-vectores-radar-pantalla-sobre-lineas-cuadradas-cuadradas-fondo-interfaz-usuario-hud_87720-113.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    // min-height: 150px;
+    &:hover{
+        z-index: 1;
+        animation: zoom .8s 1 forwards;
+        filter: drop-shadow(0px 0px 10px #00B5AD);
+      }
+    &__body{
+        // min-height: 150px; 
+        padding: 15px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.28) 100%);
+        &--name{
+            text-align: center;
+            font-size: 1.2vmax;
+            margin-bottom: 10px;
+        }
+        &--data{
+            font-size: .7vmax;            
+            margin-bottom: 10px;
+
+        }
+        &--created{
+            font-size: .9vmax;            
+            margin-bottom: 10px;
+
+        }
+    }
+}
+@keyframes zoom { 
+    from {transform: scale(1)}
+    to {transform: scale(1.5)}
+  }

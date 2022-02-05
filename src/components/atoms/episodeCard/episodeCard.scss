@@ -1,0 +1,15 @@
+.episodeCard{
+    color: white;
+    font-family: aspace, serif;
+    &:hover{
+        color: #6CEA80;
+    }
+    .modal{
+        &-dialog{
+            color: rgb(36, 36, 36);
+        }
+        &-header{
+            border-bottom: none;
+        }
+    }
+}

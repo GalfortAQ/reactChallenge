@@ -1,0 +1,32 @@
+.search{
+    padding: 10px;
+    &__select,&__input{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        font-family: aspace, serif;
+        border: none;
+        padding: 5px 15px 5px;
+        height: 50px;
+    }
+    &__select{
+        border-radius:50px 0px 0px 50px;
+        option{color: black;}
+    }
+    &__input{
+        border-radius:0px 50px 50px 0px;
+    }
+    &__warning{
+        border: 1px solid #C03131;
+        border-radius: 10px;
+        p{
+            margin: 10px;
+            color: #C03131;
+            font-family: aspace, serif;
+            font-size: 12px;
+            svg{
+                margin-right: 7px;
+            }
+        }
+    }
+}

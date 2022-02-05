@@ -25,7 +25,7 @@
 .App-link {
   color: #909090;
 }
-.App-link:hover{
+.App-link:hover {
   color: #595959;
 }
 
@@ -42,4 +42,18 @@
 
 .home-title {
   margin-bottom: 0;
+}
+.containerFirstButton{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: aspace, serif;
+}
+.inHome {
+  background-color: white;
+  height: 100vh;
+}
+.inChallenge {
+  background-color: #202124;
+  height: 100vh;
 }
